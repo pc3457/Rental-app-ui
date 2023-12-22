@@ -1,0 +1,90 @@
+/* ReservationPopup.css */
+.reservation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .reservation-popup {
+    background: #fff;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .reservation-header {
+    background: #FF3D00;
+    color: #fff;
+    padding: 10px 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .reservation-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .reservation-details {
+    flex: 1;
+    padding-right: 20px; /* Adjust the space between details and car image */
+  }
+  
+  .reservation-car {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .reservation-car img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .reservation-footer {
+    text-align: right;
+    padding-top: 20px;
+  }
+  
+  .reservation-close {
+    background: #FF3D00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .close-confirmed-popup-button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Medium font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    outline: none; /* Remove outline */
+    transition: background-color 0.2s; /* Smooth transition for background color */
+  }
+  .close-confirmed-popup-button:hover {
+    background-color: #45a049; /* Darker shade of green on hover */
+  }
+  
+  .close-confirmed-popup-button:active {
+    background-color: #397d35; /* Even darker green when button is clicked */
+    transform: translateY(2px); /* Slight downward movement when clicked */
+  }
+  
+  /* Optional: if you want to absolutely position your button within the popup */
+  .booking-confirmed-content {
+    position: relative; /* Relative positioning for the parent */
+  }
+  

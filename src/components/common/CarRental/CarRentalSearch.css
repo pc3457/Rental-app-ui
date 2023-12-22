@@ -1,0 +1,285 @@
+/* CarRentalSearch.css */
+
+/* Container for the search input and button */
+  
+  /* Styling for input fields */
+  .search-input {
+    margin-right: 8px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  
+  .search-button:hover {
+    background-color: #004494;
+  }
+  
+  /* Container for the table to enable responsive scrolling */
+  .table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+  }
+  
+  
+  .th, .td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Zebra striping for table rows */
+  .tr:nth-child(even) .td {
+    background-color: #f2f2f2;
+  }
+  
+  
+  /* Ensure the table header is readable on small screens */
+  @media (max-width: 600px) {
+    .th, .td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+
+  .book-button:hover {
+    background-color: #218838;
+  }
+
+
+  .search-wrapper {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .search-field {
+    flex: 1;
+  }
+  
+  .search-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  
+  .search-field input,
+  .search-field select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    /* additional styles for the input/select fields */
+  }
+  
+  .search-button {
+    background-color: #ff6a55; /* example color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* additional styles for the button */
+  }
+  
+  /* Add responsive design as needed */
+  @media (max-width: 768px) {
+    .search-container {
+      flex-direction: column;
+    }
+  
+    .search-container select {
+      margin-bottom: 10px;
+    }
+  }
+
+  .popup-container {
+    
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+  /* CarRentalSearch.css */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    width: 80%;
+    max-width: 1000px;
+    overflow-y: auto;
+    z-index: 10000; 
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .book-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .close-button {
+    background-color: #f44336; /* Red */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+  /* CarRentalSearch.css */
+/* ...existing styles... */
+
+.booking-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100; /* Ensure it's above other elements */
+  }
+  
+  .booking-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .booking-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .confirm-booking-button, .cancel-booking-button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .confirm-booking-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  
+  .cancel-booking-button {
+    background-color: #f44336; /* Red */
+    color: white;
+  }
+
+  .booking-confirmed-popup {
+    position: fixed; /* Fixed position */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust the positioning to truly center it */
+    z-index: 1000; /* Ensure it's above other elements */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 20px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* A subtle shadow */
+    animation: fadeInOut 10s forwards; /* Fade in and stay for duration then fade out */
+}
+
+/* Fade in and stay for the duration of 10 seconds then fade out */
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    95% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+  
+  
+  /* Add any additional global styles, resets, or variable declarations here */
+  
+  
+  
+  /* Add your additional custom styles as needed */
+  
